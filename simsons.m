@@ -3,7 +3,7 @@ clear all;
 clc ;
 
 %f= inline('1./(x.^2 + 6*x +10)')
-f = @(x) 1./(x.^2 + 6*x +10);
+f = @(x) 4*x-3*x.^2;
 a = input("enter lower limit: ");
 b = input("enter upper limit: ");
 n = input("enter number of sub interval: ");

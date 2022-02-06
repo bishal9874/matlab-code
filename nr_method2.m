@@ -1,11 +1,15 @@
-clc
-clear all;
-f= @(i) 4*exp(-2*i) + exp(-0.1*i)-0.5;
-dft= @(i) -8*exp(-2*i)-0.1*exp(-0.1*i);
-i= input('enter the interval where roots lies:');
- 
-for x=1:100
-f(i+1) = i-f(i)/dft(i);
-f(i) = f(i+1)
+clc;clear all;
+
+t0=input(" enter the value of t0 where the root lies:");
+f=@(t0) t0^3-8*t0-4;
+f1=@(t0) 3*t0^2-8;
+x=5;
+
+for i=1:x
+
+  t1=t0-f(t0)/f1(t0);
+  n=i
+  t0=t1
+
 end
-root=f(i)
+printf("root is:%f\n",t0)
