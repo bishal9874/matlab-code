@@ -1,5 +1,5 @@
 clc;clear all;
-f=inline('x^3-9*x+1')
+f=inline('x^3-2*x-5')
 
 a=input('enter the value of a:')
 b=input('enter the value  of b:')

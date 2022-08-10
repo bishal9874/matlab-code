@@ -2,7 +2,7 @@ clear
 clc
 %f=input('\n Enter the function f(x,y): '); %inline('x^2+y') 
 %Write your f(x,y) function, where dy/dx=f(x,y), x(x0)=y0.
- f=@ (x,y) x^3+y;
+ f=@ (x,y) x+y;
 x0=input('\n Enter initial value of x i.e. x0: '); %example x0=0
 y0=input('\n Enter initial value of y i.e. y0: '); %example y0=1
 xn=input('\n Enter the final value of x: ');
